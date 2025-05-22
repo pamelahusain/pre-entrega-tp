@@ -20,5 +20,5 @@ Este proyecto fue desarrollado como parte de una práctica de HTML y CSS.
 
 ## Autor
 
-- Nombre: [Tu nombre aquí]
-- Curso: [Nombre del curso o materia]
+- Nombre: [PAMELA RODRIGUEZ HUSAIN]
+- Curso: [DESARROLLO FRONT END]
