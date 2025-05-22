@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mi Proyecto Web</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Proyecto Web</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Bienvenidos a Mi Proyecto Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Main content -->
-    <main>
-        <!-- Inicio (puedes agregar más contenido aquí si quieres) -->
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Bienvenido a nuestro sitio web, donde encontrarás productos increíbles y contenido multimedia.</p>
-        </section>
+  <header>
+    <h1>Mi Proyecto Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Sección Productos con imagen -->
-        <section id="productos">
-            <h2>Productos</h2>
-            <div class="productos-container">
-                <div class="producto-card">
-                    <img src="tucan-sobre-el-fondo-de-la-naturaleza.jpg" alt="Tucán en la naturaleza" />
-                    <h3>Producto: Tucán Natural</h3>
-                    <p>Descripción del producto con una imagen hermosa de un tucán.</p>
-                </div>
-            </div>
-        </section>
+  <main>
+    <!-- Sección Inicio con fondo -->
+    <section id="inicio" class="section-fondo">
+      <h2>Bienvenidos a Nuestra Página</h2>
+      <p>Disfruta navegando por nuestros productos y servicios.</p>
+      <img src="tucan-sobre-el-fondo-de-la-naturaleza.jpg" alt="Tucán sobre naturaleza" width="400" />
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/S8GpX3SAeig" title="Video YouTube" frameborder="0" allowfullscreen></iframe>
+    </section>
 
-        <!-- Sección Video -->
-        <section id="video">
-            <h2>Video</h2>
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/S8GpX3SAeig" 
-                title="Video de Tucán"
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </section>
+    <!-- Sección Productos -->
+    <section id="productos" class="productos">
+      <div class="card">
+        <h3>Producto 1</h3>
+        <img src="producto1.jpg" alt="Producto 1" width="250" />
+        <p>Descripción del producto 1.</p>
+      </div>
+      <div class="card">
+        <h3>Producto 2</h3>
+        <img src="producto2.jpg" alt="Producto 2" width="250" />
+        <p>Descripción del producto 2.</p>
+      </div>
+      <div class="card">
+        <h3>Producto 3</h3>
+        <img src="producto3.jpg" alt="Producto 3" width="250" />
+        <p>Descripción del producto 3.</p>
+      </div>
+    </section>
 
-        <!-- Sección Contacto con formulario -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/yourFormId" method="POST">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required />
+    <!-- Sección Reseñas -->
+    <section id="reseñas" class="reseñas">
+      <div class="reseña">
+        <p>"Excelente producto, muy recomendable."</p>
+        <small>- Cliente A</small>
+      </div>
+      <div class="reseña">
+        <p>"Servicio al cliente impecable."</p>
+        <small>- Cliente B</small>
+      </div>
+      <div class="reseña">
+        <p>"Entrega rápida y producto de calidad."</p>
+        <small>- Cliente C</small>
+      </div>
+    </section>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required />
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xeogwlgw" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required />
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
+  <footer>
+    <p>© 2025 Mi Proyecto Web - Todos los derechos reservados.</p>
+  </footer>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Mi Proyecto Web</p>
-    </footer>
 </body>
 </html>
