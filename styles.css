@@ -1,0 +1,74 @@
+/* Fuente Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Fondo con imagen */
+section {
+    background-image: url('2831104.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+}
+
+
+/* Estilos para las tarjetas de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto-card {
+    flex: 1 1 30%; /* Cada tarjeta ocupa el 30% del contenedor */
+    margin: 1rem;
+    text-align: center;
+}
+
+.producto-card img {
+    max-width: 100%;
+    height: auto;
+}

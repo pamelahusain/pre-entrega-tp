@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Proyecto Web</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Bienvenidos a Mi Proyecto Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Inicio (puedes agregar más contenido aquí si quieres) -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestro sitio web, donde encontrarás productos increíbles y contenido multimedia.</p>
+        </section>
+
+        <!-- Sección Productos con imagen -->
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="productos-container">
+                <div class="producto-card">
+                    <img src="tucan-sobre-el-fondo-de-la-naturaleza.jpg" alt="Tucán en la naturaleza" />
+                    <h3>Producto: Tucán Natural</h3>
+                    <p>Descripción del producto con una imagen hermosa de un tucán.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Video -->
+        <section id="video">
+            <h2>Video</h2>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/S8GpX3SAeig" 
+                title="Video de Tucán"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Sección Contacto con formulario -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/yourFormId" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi Proyecto Web</p>
+    </footer>
+</body>
+</html>
