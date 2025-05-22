@@ -16,7 +16,7 @@ Este proyecto fue desarrollado como parte de una práctica de HTML y CSS.
 
 ## Enlace al sitio
 
-👉 [Ver sitio publicado](https://pamelahusain.github.io/pre-entrega-tp/)
+👉 [Ver sitio publicado]([https://pamelahusain.github.io/pre-entrega-tp/)
 
 ## Autor
 
